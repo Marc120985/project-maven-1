@@ -2,7 +2,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         System.out.println("Was passiert jetzt?");
-        System.out.println(facurechner(6) - facurechner(4));
+
+
+
+        System.out.println("Die Fakultaet von 7 ist gleich: " + facurechner(7));
     }
 
 
