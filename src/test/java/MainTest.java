@@ -65,5 +65,18 @@ public class MainTest {
         assertEquals(5040, actual);
     }
 
+    @Test
+    public void fakuWhlie(){
+        //Given
+        int multi= 7;
+
+        //When
+
+        int actual = Main.facurechnerWithWhile(multi);
+
+        //Then
+
+        assertEquals(5040, actual);
+    }
 
 }

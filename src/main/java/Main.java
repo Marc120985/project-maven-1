@@ -6,6 +6,7 @@ public class Main {
 
 
         System.out.println("Die Fakultaet von 7 ist gleich: " + facurechner(7));
+        System.out.println("Die Fakultaet von 7 ist gleich: " + facurechnerWithWhile(7));
     }
 
 
@@ -32,4 +33,13 @@ public class Main {
         return result;
     }
 
+    public static int facurechnerWithWhile(int f) {
+        int count = 1;
+        int result = 1;
+        while (count <= f){
+            result = result * count;
+            count++;
+        }
+        return result;
+    }
 }
