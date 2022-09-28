@@ -31,7 +31,7 @@ public class MainTest {
 
 
         //Then
-        assertTrue(true, "The value is bigger then 100");
+        assertTrue(actual, "The value is lower then 100");
 
     }
 
@@ -39,7 +39,7 @@ public class MainTest {
     public void biggerThenTest2(){
         //Given
 
-        int imput = 120;
+        int imput = 80;
 
         //When
 
@@ -47,8 +47,23 @@ public class MainTest {
 
 
         //Then
-        assertFalse(false, "The value is bigger then 100");
+        assertFalse(actual, "The value is bigger then 100");
 
     }
+
+    @Test
+    public void faku(){
+        //Given
+        int multi= 7;
+
+        //When
+
+        int actual = Main.facurechner(multi);
+
+        //Then
+
+        assertEquals(5040, actual);
+    }
+
 
 }
